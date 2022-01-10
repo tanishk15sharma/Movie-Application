@@ -1,4 +1,5 @@
 @import "../../common/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@500&family=Lato:wght@700&family=Noto+Sans:ital@0;1&family=Open+Sans&family=Prompt:wght@200&family=Roboto:wght@700&display=swap");
 
 .header {
   background: $secondary-color;
@@ -10,10 +11,12 @@
 }
 
 .logo {
+  font-family: "Be Vietnam Pro", sans-serif;
+
   color: $font-primary;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
+  //   font-weight: 600;
 }
 
 .user-image,
