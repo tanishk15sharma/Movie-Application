@@ -40,9 +40,9 @@ const movieSlice = createSlice({
       state.movies = payload; //Data is coming in the form of payload
       // console.log(state.movies);
     },
-    addSeries: (state, { payload }) => {
-      state.movies = payload;
-    },
+    // addSeries: (state, { payload }) => {
+    //   state.movies = payload;
+    // },
   },
   extraReducers: {
     [fetchAsyncMovies.pending]: () => {
@@ -56,15 +56,15 @@ const movieSlice = createSlice({
       console.log("Error:Rejected...");
     },
     [fetchAsyncSeries.fulfilled]: (state, { payload }) => {
-      console.log("Movie Data;fetch Successful");
+      console.log("Series Data;fetch Successful");
       return { ...state, shows: payload };
     },
   },
 });
 // console.log(movieSlice);
 
-export const { addMovies } = movieSlice.actions; //destructuring movieSlice object.actions.
 export const getAllSeries = (state) => state.movies.shows;
-export const getAllMovies = (state) => state.movies.movies; //first movies is the name of the slice.
+export const getAllMovies = (state) => state.movies.movies;
+//first movies is the name of the slice.
 //in above line  we are making a arrow function and then passing state as a parameter in it and it will be recived by movie listing with the help of useSelector.
 export default movieSlice.reducer;
