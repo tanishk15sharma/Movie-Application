@@ -24,6 +24,15 @@ const MovieDetail = () => {
           <span>
             IMBD Rating <i className="fa fa-star"></i> : {idData.imdbRating}
           </span>
+          <span>
+            IMBD Votes <i className="fa fa-thumbs-up"></i> : {idData.imdbVotes}
+          </span>
+          <span>
+            Run Time <i className="fa fa-film"></i> : {idData.Runtime}
+          </span>
+          <span>
+            Year <i className="fa fa-calander"></i> : {idData.Year}
+          </span>
         </div>
       </div>
     </div>
