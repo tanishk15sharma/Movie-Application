@@ -4,7 +4,7 @@
 .header {
   background: $secondary-color;
   height: 72px;
-  padding: 0px 40px;
+  padding: 20px 40px;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -14,7 +14,8 @@
   font-family: "Be Vietnam Pro", sans-serif;
   color: $font-primary;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  padding-top: 5px;
   //   font-weight: 600;
 }
 
@@ -28,4 +29,29 @@
   width: 50%;
   display: flex;
   justify-content: center;
+
+  form {
+    display: flex;
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 0px 8px;
+      font-size: 20px;
+      cursor: pointer;
+      height: 38px;
+      border-radius: 5px;
+      border-top: transparent;
+      border-bottom: transparent;
+      border-right: transparent;
+    }
+  }
+
+  input {
+    font-size: 35px;
+    width: 100%;
+    padding: 5px 5px 5px 10px;
+    height: 38px;
+    outline: none;
+  }
 }
