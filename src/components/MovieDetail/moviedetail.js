@@ -57,6 +57,9 @@ const MovieDetail = () => {
             <span>{idData.Awards}</span>
           </div>
         </div>
+        <div className="section-right">
+          <img src={idData.Poster} alt={idData.imdbID} />
+        </div>
       </div>
     </div>
   );
