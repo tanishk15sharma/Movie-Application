@@ -6,6 +6,7 @@ import { APIkey } from "../../apis/movieApiKey";
 const initialState = {
   movies: {},
   shows: {},
+  selectedMovieOrShow: {},
 };
 
 export const fetchAsyncMovies = createAsyncThunk(
@@ -28,6 +29,15 @@ export const fetchAsyncSeries = createAsyncThunk(
       `?apikey=${APIkey}&s=${seriesText}&type=series`
     );
     // console.log(response);
+    return response.data;
+  }
+);
+
+export const fetchAsyncMovieOrSeries = createAsyncThunk(
+  "movies/fetchAsyncMovieOrSeries",
+  async (id) => {
+    const response = await movieApi.get(`?apikey=${APIkey}&i=${id}&Plot=full`);
+    console.log("plot and detaisl getting");
     return response.data;
   }
 );
@@ -58,6 +68,10 @@ const movieSlice = createSlice({
     [fetchAsyncSeries.fulfilled]: (state, { payload }) => {
       console.log("Series Data;fetch Successful");
       return { ...state, shows: payload };
+    },
+    [fetchAsyncMovieOrSeries.fulfilled]: (state, { payload }) => {
+      console.log("plot n data fetched ");
+      return { ...state, selectedMovieOrShow: payload };
     },
   },
 });
