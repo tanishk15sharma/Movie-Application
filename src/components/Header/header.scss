@@ -12,7 +12,6 @@
 
 .logo {
   font-family: "Be Vietnam Pro", sans-serif;
-
   color: $font-primary;
   text-decoration: none;
   font-size: 20px;
@@ -23,4 +22,10 @@
 .user-image img {
   width: 38px;
   height: 38px;
+}
+
+.search-div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
