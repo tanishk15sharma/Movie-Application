@@ -73,6 +73,7 @@ const movieSlice = createSlice({
 });
 // console.log(movieSlice);
 
+export const { removeSelectedMovieOrShow } = movieSlice.actions;
 export const getAllSeries = (state) => state.movies.shows;
 export const getAllMovies = (state) => state.movies.movies;
 //first movies is the name of the slice.

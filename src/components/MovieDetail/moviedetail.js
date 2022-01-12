@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import {
   fetchAsyncMovieOrSeries,
   getSelectedMovieOrSeries,
+  removeSelectedMovieOrShow,
 } from "../../features/movies/movieSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -15,6 +16,11 @@ const MovieDetail = () => {
   console.log(idData);
   useEffect(() => {
     dispatch(fetchAsyncMovieOrSeries(imdbID)); //sending specific id to slice
+
+    return () => {
+      //as soon as we change the movieDetail card we have to see previous movieDetail for a sec (Issue)
+      dispatch(removeSelectedMovieOrShow()); //this will clean the pass movieDetail data (solution)
+    };
   }, [dispatch, imdbID]);
 
   return (
