@@ -16,7 +16,18 @@ const MovieDetail = () => {
     dispatch(fetchAsyncMovieOrSeries(imdbID)); //sending specific id to slice
   }, [dispatch, imdbID]);
 
-  return <div>moviedetail </div>;
+  return (
+    <div className="movie section">
+      <div className="section-left">
+        <div className="movie-title">{idData.Title} </div>
+        <div className="movie-rating">
+          <span>
+            IMBD Rating <i className="fa fa-star"></i> : {idData.imdbRating}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default MovieDetail;
