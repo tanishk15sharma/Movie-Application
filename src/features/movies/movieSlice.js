@@ -46,13 +46,9 @@ const movieSlice = createSlice({
   name: "movies", //name of the slice
   initialState,
   reducers: {
-    addMovies: (state, { payload }) => {
-      state.movies = payload; //Data is coming in the form of payload
-      // console.log(state.movies);
+    removeSelectedMovieOrShow: (state) => {
+      state.selectedMovieOrShow = {}; //this will make the selectedMovieOrShow Obj empty when called
     },
-    // addSeries: (state, { payload }) => {
-    //   state.movies = payload;
-    // },
   },
   extraReducers: {
     [fetchAsyncMovies.pending]: () => {

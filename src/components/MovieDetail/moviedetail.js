@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./moviedetail.scss";
 import { useParams } from "react-router-dom";
 import {
   fetchAsyncMovieOrSeries,
@@ -17,7 +18,7 @@ const MovieDetail = () => {
   }, [dispatch, imdbID]);
 
   return (
-    <div className="movie section">
+    <div className="movie-section">
       <div className="section-left">
         <div className="movie-title">{idData.Title} </div>
         <div className="movie-rating">
@@ -31,7 +32,7 @@ const MovieDetail = () => {
             Run Time <i className="fa fa-film"></i> : {idData.Runtime}
           </span>
           <span>
-            Year <i className="fa fa-calander"></i> : {idData.Year}
+            Year <i className="fa fa-calendar"></i> : {idData.Year}
           </span>
         </div>
         <div className="movie-plot">{idData.Plot}</div>
