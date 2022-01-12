@@ -34,6 +34,29 @@ const MovieDetail = () => {
             Year <i className="fa fa-calander"></i> : {idData.Year}
           </span>
         </div>
+        <div className="movie-plot">{idData.Plot}</div>
+        <div className="movie-info">
+          <div>
+            <span>Director </span>
+            <span>{idData.Director}</span>
+          </div>
+          <div>
+            <span>Stars </span>
+            <span>{idData.Actors}</span>
+          </div>
+          <div>
+            <span>Generes </span>
+            <span>{idData.Genre}</span>
+          </div>
+          <div>
+            <span>Languages </span>
+            <span>{idData.Language}</span>
+          </div>
+          <div>
+            <span>Awards </span>
+            <span>{idData.Awards}</span>
+          </div>
+        </div>
       </div>
     </div>
   );
