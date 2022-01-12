@@ -1,10 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 const MovieDetail = () => {
-  let { imdbID } = useParams();
+  // let { imdbID } = useParams();
 
-  return <div>moviedetail {imdbID} </div>;
+  return <div>moviedetail </div>;
 };
 
 export default MovieDetail;
