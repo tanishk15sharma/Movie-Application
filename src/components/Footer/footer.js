@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer-text">
-        Imdb©2022, Movie , Inc. or its affiliates
+        IMDb BOX©2022, Movie , Inc. or its affiliates
       </div>
     </div>
   );

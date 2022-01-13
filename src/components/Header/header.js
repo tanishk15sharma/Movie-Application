@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/">
-        <div className="logo">MOVIE APP</div>
+        <div className="logo">IMDb BOX</div>
       </Link>
       <div className="search-div">
         <form onSubmit={submitHandler}>
