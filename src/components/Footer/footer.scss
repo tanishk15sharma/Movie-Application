@@ -6,6 +6,18 @@
   justify-content: center;
   align-items: center;
   height: 72px;
-  color: $font-primary;
+  color: #589bbe;
   flex-direction: column;
+}
+
+.link-icon {
+  padding: 5px 5px 2px 5px;
+  font-size: 25px;
+  color: #69b7e0;
+}
+
+.footer-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
 }
