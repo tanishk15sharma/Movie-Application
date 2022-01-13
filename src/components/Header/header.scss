@@ -14,7 +14,7 @@
   font-family: "Be Vietnam Pro", sans-serif;
   color: $font-primary;
   text-decoration: none;
-  font-size: 25px;
+
   padding-top: 5px;
   //   font-weight: 600;
 }
@@ -49,10 +49,13 @@
   }
 
   input {
-    font-size: 35px;
+    font-size: 20px;
     width: 100%;
-    padding: 5px 5px 5px 10px;
+    // padding: 20px 10px 15px 10px;
+    // padding: 20px;
     height: 38px;
     outline: none;
+    padding-right: 100px;
+    // padding-bottom: 10px;
   }
 }
